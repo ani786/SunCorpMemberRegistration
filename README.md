@@ -6,12 +6,16 @@ The output can be downloaded to a File.
 
 Use the sample.xml and sample.csv for Member Registrations.
 
-GroupByFund Client
+ GroupByFund Client
 ![Optional Text](TestGroupByFund.JPG)
 
 
 
-GroupByEmployee Client
+
+
+
+
+  GroupByEmployer Client
 ![Optional Text](TestGroupByEmployer.JPG)
 
 
