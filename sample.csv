@@ -1,0 +1,11 @@
+transactionIdentifier,employerNames,employerABN,fundIdentifier,fundEmployerIdentifier,memberFirstName,memberLastName,memberOtherNames,memberDateOfBirth,memberGender,memberAddress,memberEmail,memberContactNumber,memberNumber,memberTFN,memberPayrollNumber,memberEmploymentStatus,memberFundRegistrationDate
+1,ACME Inc,55 794 738 187,FUND123,FEID1,John,Smith,,1990-12-23,M,12 Alcott Street Sydney NSW 2000,jsmith@email.com,0401234567,M12345,123456782,P12345,Permanent,2017-10-21
+1,ACME Inc,55 794 738 187,FUND123,FEID1,Jane,Smith,,1980-02-23,F,23 Giles Crescent North Sydney NSW 2060,jsmith12@email.com,0421234567,M12346,123456782,P12346,Permanent,2011-09-21
+1,ACME Inc,55 794 738 187,FUND123,FEID1,Jeffrey,Smith,,1991-03-22,M,18 Betty Lane Sydney NSW 2000,jsmith43@email.com,0401444321,M12347,123456782,P12347,Permanent,2007-11-21
+1,ACME Inc,55 794 738 187,FUND123,FEID1,Jill,Jones,,1976-02-23,F,101a Down Street Sydney NSW 2000,jjones@email.com,0411293222,M12348,123456782,P12348,Casual,2014-10-21
+1,Bills made Easy,72 805 608 587,FUND123,FEID2,Jack,Smith,,1955-12-03,M,77 Harris Street Sydney NSW 2000,jsmith77@email.com,0409293888,M12345,123456782,P85473,Permanent,2003-01-21
+1,Bills made Easy,72 805 608 587,FUND123,FEID2,James,Smith,,1997-02-04,M,Ostrich Parade Sydney NSW 2000,jsmith56@email.com,0412940392,M12485,123456782,P85475,Permanent,2017-10-20
+1,Bills made Easy,72 805 608 587,FUND123,FEID2,Jefferson,Smith,,1992-12-25,M,12/232 William Street Sydney NSW 2000,jsmith111@email.com,0410394738,M12355,123456782,P85476,Permanent,2020-03-21
+1,Viking Decorations,72 164 088 738,FUND456,FEID1,Jed,Smith,,1993-12-24,M,121 Black Road Sydney NSW 2000,jsmith11112@email.com,0402947382,M15345,123456782,P934748,Permanent,2018-11-01
+1,Viking Decorations,72 164 088 738,FUND456,FEID1,Jim,Smith,,1982-12-29,M,1 Abbot Close Sydney NSW 2000,jsmith3243@email.com,0401102937,M16345,123456782,P934747,Permanent,2016-12-21
+1,Viking Decorations,72 164 088 738,FUND456,FEID1,Jarod,Smith,,1981-05-20,M,127 Hume Street Sydney NSW 2000,jsmith22245@email.com,0401843827,M17345,123456782,P934749,Permanent,2010-01-21
