@@ -23,7 +23,7 @@ import java.util.Map;
 @RestController
 @Slf4j
 @NoArgsConstructor
-@RequestMapping("/rest")
+@RequestMapping("/member")
 public class FileUploadController {
 
     private static final String GROUP_BY_ERROR = "MRA Could not process  choose option groupBy employer or fund:  you have chosen File Name  ${fileName} ! and groupBy ${groupBy}";
@@ -33,7 +33,7 @@ public class FileUploadController {
     @Autowired
     ProcessFileService processFileService;
 
-    @PostMapping(path = "/upload", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(path = "/registrations", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, List<MemberRegistration>>> uploadFile(@RequestParam("file") MultipartFile file, @RequestParam("groupBy") String groupBy, Model model ) {
         log.info("MRA  in FileUploadController-->uploadFile ------>" + file.getOriginalFilename());
 
