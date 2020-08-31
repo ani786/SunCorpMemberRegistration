@@ -1,4 +1,4 @@
-# SunCorpMemberRegistration
+# SuperChoiceRegistration
 Member Registrations for Insurance company SuperChoice done by uploading input CSV or XML file.
 The output shall be grouped by fund or Employer based on the input supplied.
 The output can be downloaded to a File.
