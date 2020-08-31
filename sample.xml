@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <transactionIdentifier>1</transactionIdentifier>
+    <employerNames>ACME Inc</employerNames>
+    <employerABN>55 794 738 187</employerABN>
+    <fundIdentifier>FUND123</fundIdentifier>
+    <fundEmployerIdentifier>FEID1</fundEmployerIdentifier>
+    <memberFirstName>John</memberFirstName>
+    <memberLastName>Smith</memberLastName>
+    <memberOtherNames></memberOtherNames>
+    <memberDateOfBirth>1990-12-23</memberDateOfBirth>
+    <memberGender>M</memberGender>
+    <memberAddress>12 Alcott Street Sydney NSW 2000</memberAddress>
+    <memberEmail>jsmith@email.com</memberEmail>
+    <memberContactNumber>0401234567</memberContactNumber>
+    <memberNumber>M12345</memberNumber>
+    <memberTFN>123456782</memberTFN>
+    <memberPayrollNumber>P12345</memberPayrollNumber>
+    <memberEmploymentStatus>Permanent</memberEmploymentStatus>
+    <memberFundRegistrationDate>2017-10-21</memberFundRegistrationDate>
+  </row>
+  <row>
+    <transactionIdentifier>1</transactionIdentifier>
+    <employerNames>ACME Inc</employerNames>
+    <employerABN>55 794 738 187</employerABN>
+    <fundIdentifier>FUND123</fundIdentifier>
+    <fundEmployerIdentifier>FEID1</fundEmployerIdentifier>
+    <memberFirstName>Jane</memberFirstName>
+    <memberLastName>Smith</memberLastName>
+    <memberOtherNames></memberOtherNames>
+    <memberDateOfBirth>1980-02-23</memberDateOfBirth>
+    <memberGender>F</memberGender>
+    <memberAddress>23 Giles Crescent North Sydney NSW 2060</memberAddress>
+    <memberEmail>jsmith12@email.com</memberEmail>
+    <memberContactNumber>0421234567</memberContactNumber>
+    <memberNumber>M12346</memberNumber>
+    <memberTFN>123456782</memberTFN>
+    <memberPayrollNumber>P12346</memberPayrollNumber>
+    <memberEmploymentStatus>Permanent</memberEmploymentStatus>
+    <memberFundRegistrationDate>2011-09-21</memberFundRegistrationDate>
+  </row>
+  <row>
+    <transactionIdentifier>1</transactionIdentifier>
+    <employerNames>ACME Inc</employerNames>
+    <employerABN>55 794 738 187</employerABN>
+    <fundIdentifier>FUND123</fundIdentifier>
+    <fundEmployerIdentifier>FEID1</fundEmployerIdentifier>
+    <memberFirstName>Jeffrey</memberFirstName>
+    <memberLastName>Smith</memberLastName>
+    <memberOtherNames></memberOtherNames>
+    <memberDateOfBirth>1991-03-22</memberDateOfBirth>
+    <memberGender>M</memberGender>
+    <memberAddress>18 Betty Lane Sydney NSW 2000</memberAddress>
+    <memberEmail>jsmith43@email.com</memberEmail>
+    <memberContactNumber>0401444321</memberContactNumber>
+    <memberNumber>M12347</memberNumber>
+    <memberTFN>123456782</memberTFN>
+    <memberPayrollNumber>P12347</memberPayrollNumber>
+    <memberEmploymentStatus>Permanent</memberEmploymentStatus>
+    <memberFundRegistrationDate>2007-11-21</memberFundRegistrationDate>
+  </row>
+  <row>
+    <transactionIdentifier>1</transactionIdentifier>
+    <employerNames>ACME Inc</employerNames>
+    <employerABN>55 794 738 187</employerABN>
+    <fundIdentifier>FUND123</fundIdentifier>
+    <fundEmployerIdentifier>FEID1</fundEmployerIdentifier>
+    <memberFirstName>Jill</memberFirstName>
+    <memberLastName>Jones</memberLastName>
+    <memberOtherNames></memberOtherNames>
+    <memberDateOfBirth>1976-02-23</memberDateOfBirth>
+    <memberGender>F</memberGender>
+    <memberAddress>101a Down Street Sydney NSW 2000</memberAddress>
+    <memberEmail>jjones@email.com</memberEmail>
+    <memberContactNumber>0411293222</memberContactNumber>
+    <memberNumber>M12348</memberNumber>
+    <memberTFN>123456782</memberTFN>
+    <memberPayrollNumber>P12348</memberPayrollNumber>
+    <memberEmploymentStatus>Casual</memberEmploymentStatus>
+    <memberFundRegistrationDate>2014-10-21</memberFundRegistrationDate>
+  </row>
+  <row>
+    <transactionIdentifier>1</transactionIdentifier>
+    <employerNames>Bills made Easy</employerNames>
+    <employerABN>72 805 608 587</employerABN>
+    <fundIdentifier>FUND123</fundIdentifier>
+    <fundEmployerIdentifier>FEID2</fundEmployerIdentifier>
+    <memberFirstName>Jack</memberFirstName>
+    <memberLastName>Smith</memberLastName>
+    <memberOtherNames></memberOtherNames>
+    <memberDateOfBirth>1955-12-03</memberDateOfBirth>
+    <memberGender>M</memberGender>
+    <memberAddress>77 Harris Street Sydney NSW 2000</memberAddress>
+    <memberEmail>jsmith77@email.com</memberEmail>
+    <memberContactNumber>0409293888</memberContactNumber>
+    <memberNumber>M12345</memberNumber>
+    <memberTFN>123456782</memberTFN>
+    <memberPayrollNumber>P85473</memberPayrollNumber>
+    <memberEmploymentStatus>Permanent</memberEmploymentStatus>
+    <memberFundRegistrationDate>2003-01-21</memberFundRegistrationDate>
+  </row>
+  <row>
+    <transactionIdentifier>1</transactionIdentifier>
+    <employerNames>Bills made Easy</employerNames>
+    <employerABN>72 805 608 587</employerABN>
+    <fundIdentifier>FUND123</fundIdentifier>
+    <fundEmployerIdentifier>FEID2</fundEmployerIdentifier>
+    <memberFirstName>James</memberFirstName>
+    <memberLastName>Smith</memberLastName>
+    <memberOtherNames></memberOtherNames>
+    <memberDateOfBirth>1997-02-04</memberDateOfBirth>
+    <memberGender>M</memberGender>
+    <memberAddress>Ostrich Parade Sydney NSW 2000</memberAddress>
+    <memberEmail>jsmith56@email.com</memberEmail>
+    <memberContactNumber>0412940392</memberContactNumber>
+    <memberNumber>M12485</memberNumber>
+    <memberTFN>123456782</memberTFN>
+    <memberPayrollNumber>P85475</memberPayrollNumber>
+    <memberEmploymentStatus>Permanent</memberEmploymentStatus>
+    <memberFundRegistrationDate>2017-10-20</memberFundRegistrationDate>
+  </row>
+  <row>
+    <transactionIdentifier>1</transactionIdentifier>
+    <employerNames>Bills made Easy</employerNames>
+    <employerABN>72 805 608 587</employerABN>
+    <fundIdentifier>FUND123</fundIdentifier>
+    <fundEmployerIdentifier>FEID2</fundEmployerIdentifier>
+    <memberFirstName>Jefferson</memberFirstName>
+    <memberLastName>Smith</memberLastName>
+    <memberOtherNames></memberOtherNames>
+    <memberDateOfBirth>1992-12-25</memberDateOfBirth>
+    <memberGender>M</memberGender>
+    <memberAddress>12/232 William Street Sydney NSW 2000</memberAddress>
+    <memberEmail>jsmith111@email.com</memberEmail>
+    <memberContactNumber>0410394738</memberContactNumber>
+    <memberNumber>M12355</memberNumber>
+    <memberTFN>123456782</memberTFN>
+    <memberPayrollNumber>P85476</memberPayrollNumber>
+    <memberEmploymentStatus>Permanent</memberEmploymentStatus>
+    <memberFundRegistrationDate>2020-03-21</memberFundRegistrationDate>
+  </row>
+  <row>
+    <transactionIdentifier>1</transactionIdentifier>
+    <employerNames>Viking Decorations</employerNames>
+    <employerABN>72 164 088 738</employerABN>
+    <fundIdentifier>FUND456</fundIdentifier>
+    <fundEmployerIdentifier>FEID1</fundEmployerIdentifier>
+    <memberFirstName>Jed</memberFirstName>
+    <memberLastName>Smith</memberLastName>
+    <memberOtherNames></memberOtherNames>
+    <memberDateOfBirth>1993-12-24</memberDateOfBirth>
+    <memberGender>M</memberGender>
+    <memberAddress>121 Black Road Sydney NSW 2000</memberAddress>
+    <memberEmail>jsmith11112@email.com</memberEmail>
+    <memberContactNumber>0402947382</memberContactNumber>
+    <memberNumber>M15345</memberNumber>
+    <memberTFN>123456782</memberTFN>
+    <memberPayrollNumber>P934748</memberPayrollNumber>
+    <memberEmploymentStatus>Permanent</memberEmploymentStatus>
+    <memberFundRegistrationDate>2018-11-01</memberFundRegistrationDate>
+  </row>
+  <row>
+    <transactionIdentifier>1</transactionIdentifier>
+    <employerNames>Viking Decorations</employerNames>
+    <employerABN>72 164 088 738</employerABN>
+    <fundIdentifier>FUND456</fundIdentifier>
+    <fundEmployerIdentifier>FEID1</fundEmployerIdentifier>
+    <memberFirstName>Jim</memberFirstName>
+    <memberLastName>Smith</memberLastName>
+    <memberOtherNames></memberOtherNames>
+    <memberDateOfBirth>1982-12-29</memberDateOfBirth>
+    <memberGender>M</memberGender>
+    <memberAddress>1 Abbot Close Sydney NSW 2000</memberAddress>
+    <memberEmail>jsmith3243@email.com</memberEmail>
+    <memberContactNumber>0401102937</memberContactNumber>
+    <memberNumber>M16345</memberNumber>
+    <memberTFN>123456782</memberTFN>
+    <memberPayrollNumber>P934747</memberPayrollNumber>
+    <memberEmploymentStatus>Permanent</memberEmploymentStatus>
+    <memberFundRegistrationDate>2016-12-21</memberFundRegistrationDate>
+  </row>
+  <row>
+    <transactionIdentifier>1</transactionIdentifier>
+    <employerNames>Viking Decorations</employerNames>
+    <employerABN>72 164 088 738</employerABN>
+    <fundIdentifier>FUND456</fundIdentifier>
+    <fundEmployerIdentifier>FEID1</fundEmployerIdentifier>
+    <memberFirstName>Jarod</memberFirstName>
+    <memberLastName>Smith</memberLastName>
+    <memberOtherNames></memberOtherNames>
+    <memberDateOfBirth>1981-05-20</memberDateOfBirth>
+    <memberGender>M</memberGender>
+    <memberAddress>127 Hume Street Sydney NSW 2000</memberAddress>
+    <memberEmail>jsmith22245@email.com</memberEmail>
+    <memberContactNumber>0401843827</memberContactNumber>
+    <memberNumber>M17345</memberNumber>
+    <memberTFN>123456782</memberTFN>
+    <memberPayrollNumber>P934749</memberPayrollNumber>
+    <memberEmploymentStatus>Permanent</memberEmploymentStatus>
+    <memberFundRegistrationDate>2010-01-21</memberFundRegistrationDate>
+  </row>
+</root>
