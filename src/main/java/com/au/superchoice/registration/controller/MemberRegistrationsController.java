@@ -34,30 +34,30 @@ public class MemberRegistrationsController {
     MemberRegistrationsService memberRegistrationsService;
 
     @PostMapping(path = "/registrations", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String, List<MemberRegistration>>> getGroupedByMemberRegistrations(@RequestParam("file") MultipartFile file, @RequestParam("groupBy") String groupBy, Model model ) {
+    public ResponseEntity<Map<String, List<MemberRegistration>>> getGroupedByMemberRegistrations(@RequestParam("file") MultipartFile file, @RequestParam("groupBy") String groupBy, Model model) {
         log.info("MRA  in FileUploadController-->uploadFile ------>" + file.getOriginalFilename());
 
         try {
-             if(file.getOriginalFilename().endsWith(".xml")){
-               file=memberRegistrationsService.convertXMLtoCSV(file);
+            if (file.getOriginalFilename().endsWith(".xml")) {
+                file = memberRegistrationsService.convertXMLtoCSV(file);
             }
             if ("employer".equalsIgnoreCase(groupBy)) {
                 return ResponseEntity.ok(memberRegistrationsService.groupByEmployer(file));
             } else if ("fund".equalsIgnoreCase(groupBy)) {
                 return ResponseEntity.ok(memberRegistrationsService.groupByFund(file));
             } else {
-                return  ResponseEntity.badRequest().body(setError(file, groupBy, model));
+                return ResponseEntity.badRequest().body(setError(file, groupBy, model));
 
             }
         } catch (Exception exception) {
             log.error("exception", exception);
-            return  ResponseEntity.badRequest().body(setException(file,model,exception));
+            return ResponseEntity.badRequest().body(setException(file, model, exception));
         }
     }
 
     private Map<String, List<MemberRegistration>> setError(MultipartFile file, String groupBy, Model model) {
-      String replace1 = StringUtils.replace(GROUP_BY_ERROR, "${fileName}", file.getOriginalFilename());
-      String replace2 = StringUtils.replace(replace1, "${groupBy}", groupBy == null || groupBy.isEmpty() ? "is blank or empty please enter the value employer or fund" : groupBy);
+        String replace1 = StringUtils.replace(GROUP_BY_ERROR, "${fileName}", file.getOriginalFilename());
+        String replace2 = StringUtils.replace(replace1, "${groupBy}", groupBy == null || groupBy.isEmpty() ? "is blank or empty please enter the value employer or fund" : groupBy);
         model.addAttribute("message", replace2);
         model.addAttribute("status", false);
         Map<String, List<MemberRegistration>> map = new HashMap<>();
@@ -66,7 +66,7 @@ public class MemberRegistrationsController {
     }
 
     private Map<String, List<MemberRegistration>> setException(MultipartFile file, Model model, Exception exception) {
-       String replace1 = StringUtils.replace(EXCEPTION, "${fileName}", file.getOriginalFilename());
+        String replace1 = StringUtils.replace(EXCEPTION, "${fileName}", file.getOriginalFilename());
         String replace2 = StringUtils.replace(replace1, "${exception}", exception.getMessage());
         model.addAttribute("message", replace2);
         model.addAttribute("status", false);
