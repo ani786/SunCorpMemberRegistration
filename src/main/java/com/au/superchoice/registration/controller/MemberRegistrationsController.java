@@ -31,20 +31,20 @@ public class MemberRegistrationsController {
 
 
     @Autowired
-    MemberRegistrationsService processFileService;
+    MemberRegistrationsService memberRegistrationsService;
 
     @PostMapping(path = "/registrations", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String, List<MemberRegistration>>> uploadFile(@RequestParam("file") MultipartFile file, @RequestParam("groupBy") String groupBy, Model model ) {
+    public ResponseEntity<Map<String, List<MemberRegistration>>> getGroupedByMemberRegistrations(@RequestParam("file") MultipartFile file, @RequestParam("groupBy") String groupBy, Model model ) {
         log.info("MRA  in FileUploadController-->uploadFile ------>" + file.getOriginalFilename());
 
         try {
              if(file.getOriginalFilename().endsWith(".xml")){
-               file=processFileService.convertXMLtoCSV(file);
+               file=memberRegistrationsService.convertXMLtoCSV(file);
             }
             if ("employer".equalsIgnoreCase(groupBy)) {
-                return ResponseEntity.ok(processFileService.groupByEmployer(file));
+                return ResponseEntity.ok(memberRegistrationsService.groupByEmployer(file));
             } else if ("fund".equalsIgnoreCase(groupBy)) {
-                return ResponseEntity.ok(processFileService.groupByFund(file));
+                return ResponseEntity.ok(memberRegistrationsService.groupByFund(file));
             } else {
                 return  ResponseEntity.badRequest().body(setError(file, groupBy, model));
 
