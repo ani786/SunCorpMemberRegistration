@@ -39,7 +39,7 @@ public class MemberRegistrationsController {
 
         try {
              if(file.getOriginalFilename().endsWith(".xml")){
-               file=processFileService.XmlToCSV(file);
+               file=processFileService.convertXMLtoCSV(file);
             }
             if ("employer".equalsIgnoreCase(groupBy)) {
                 return ResponseEntity.ok(processFileService.groupByEmployer(file));

@@ -15,6 +15,7 @@ import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
+import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Result;
@@ -93,22 +94,27 @@ public class MemberRegistrationsService {
     }
 
 
-    public MultipartFile XmlToCSV(MultipartFile file) throws ParserConfigurationException, IOException, SAXException, TransformerException {
+    public MultipartFile convertXMLtoCSV(MultipartFile file) throws ParserConfigurationException, IOException, SAXException, TransformerException {
         File stylesheet = new File("sample.xsl");
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(file.getBytes());
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-
+        factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
+        factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
         StreamSource styleSource = new StreamSource(stylesheet);
         Document xmlDocument = factory.newDocumentBuilder().parse(new InputSource(byteArrayInputStream));
-        Transformer transformer = TransformerFactory.newInstance().newTransformer(styleSource);
-        Source source = new DOMSource(xmlDocument);
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        transformerFactory.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
+        transformerFactory.setAttribute(XMLConstants.ACCESS_EXTERNAL_STYLESHEET, "");
+        Transformer transformer = transformerFactory.newTransformer(styleSource);
 
+        Source source = new DOMSource(xmlDocument);
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         Result outputTarget = new StreamResult(byteArrayOutputStream);
-        transformer.transform(source, outputTarget);
-        MultipartFile multipartFile = new MockMultipartFile("file", file.getName(), "text/plain", byteArrayOutputStream.toByteArray());
 
-        return multipartFile;
+        transformer.transform(source, outputTarget);
+
+        return new MockMultipartFile("file", file.getName(), "text/plain", byteArrayOutputStream.toByteArray());
+
 
     }
 }
