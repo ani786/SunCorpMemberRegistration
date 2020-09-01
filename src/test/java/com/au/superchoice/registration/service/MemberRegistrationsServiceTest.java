@@ -27,11 +27,11 @@ import java.io.IOException;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-@ContextConfiguration(classes = {ProcessFileService.class})
+@ContextConfiguration(classes = {MemberRegistrationsService.class})
 @RunWith(SpringRunner.class)
-public class ProcessFileServiceTest {
+public class MemberRegistrationsServiceTest {
     @Autowired
-    private ProcessFileService processFileService;
+    private MemberRegistrationsService processFileService;
 
     @Test
     public void testGroupByEmployerUsingFile() throws IOException {

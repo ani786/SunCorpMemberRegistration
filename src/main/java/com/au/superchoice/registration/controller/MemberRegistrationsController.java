@@ -1,7 +1,7 @@
 package com.au.superchoice.registration.controller;
 
 import com.au.superchoice.registration.model.MemberRegistration;
-import com.au.superchoice.registration.service.ProcessFileService;
+import com.au.superchoice.registration.service.MemberRegistrationsService;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,14 +24,14 @@ import java.util.Map;
 @Slf4j
 @NoArgsConstructor
 @RequestMapping("/member")
-public class FileUploadController {
+public class MemberRegistrationsController {
 
     private static final String GROUP_BY_ERROR = "MRA Could not process  choose option groupBy employer or fund:  you have chosen File Name  ${fileName} ! and groupBy ${groupBy}";
     private static final String EXCEPTION = "MRA Could not upload the file:  ${fileName} !  ${exception}";
 
 
     @Autowired
-    ProcessFileService processFileService;
+    MemberRegistrationsService processFileService;
 
     @PostMapping(path = "/registrations", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, List<MemberRegistration>>> uploadFile(@RequestParam("file") MultipartFile file, @RequestParam("groupBy") String groupBy, Model model ) {

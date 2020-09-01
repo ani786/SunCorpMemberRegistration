@@ -41,7 +41,7 @@ import static java.util.stream.Collectors.groupingBy;
 @Service
 @Slf4j
 @ToString
-public class ProcessFileService {
+public class MemberRegistrationsService {
 
 
     private static final Pattern CSVPattern = Pattern.compile(",");
