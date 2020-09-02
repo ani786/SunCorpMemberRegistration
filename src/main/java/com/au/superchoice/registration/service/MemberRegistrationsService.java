@@ -49,7 +49,9 @@ public class MemberRegistrationsService {
 
 
     public Map<String, List<MemberRegistration>> groupByEmployer(MultipartFile file) throws IOException {
-        log.info("MRA  in FileProcessingService-->processGroupByEmployer ------>");
+        if (log.isDebugEnabled()) {
+            log.debug("MRA  in FileProcessingService-->processGroupByEmployer ------>");
+        }
         BufferedReader bufferedReader = getBufferedReader(file);
         Map<String, List<MemberRegistration>> groupedByEmployer = bufferedReader
                 .lines()
@@ -57,15 +59,18 @@ public class MemberRegistrationsService {
                 .map(line -> getMemberRegistration(CSVPattern, line))
                 .collect(groupingBy(memberRegistration -> memberRegistration.getTransactionDetails().getEmployerForMember().getABN()));
 
-        if (log.isDebugEnabled())
+        if (log.isDebugEnabled()) {
             log.debug("MRA  in ProcessFileService-->groupByEmployer ------>output " + groupedByEmployer);
+        }
         return groupedByEmployer;
 
     }
 
 
     public Map<String, List<MemberRegistration>> groupByFund(MultipartFile file) throws IOException {
-        log.info("MRA  in FileProcessingService-->processGroupByFund ------>");
+        if (log.isDebugEnabled()) {
+            log.debug("MRA  in FileProcessingService-->processGroupByFund ------>");
+        }
         BufferedReader bufferedReader = getBufferedReader(file);
         Map<String, List<MemberRegistration>> groupedByFund = bufferedReader
                 .lines()
@@ -73,9 +78,11 @@ public class MemberRegistrationsService {
                 .map(line -> getMemberRegistration(CSVPattern, line))
                 .collect(groupingBy(memberRegistration -> memberRegistration.getTransactionDetails().getFundForMember().getIdentifier()));
 
-        if (log.isDebugEnabled())
+        if (log.isDebugEnabled()) {
             log.debug("MRA  in ProcessFileService-->groupByFund ------>output " + groupedByFund);
+        }
         return groupedByFund;
+
     }
 
 

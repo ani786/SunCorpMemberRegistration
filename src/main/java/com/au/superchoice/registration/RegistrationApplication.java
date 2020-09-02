@@ -10,7 +10,7 @@ public class RegistrationApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(RegistrationApplication.class, args);
-        log.info("==========Member Registration Application : MRA ==========================\n in RegistrationApplication-->main ------>");
+        log.info("==========Member Registration Application : MRA ==========================");
     }
 
 }

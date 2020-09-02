@@ -35,7 +35,9 @@ public class MemberRegistrationsController {
 
     @PostMapping(path = "/registrations", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, List<MemberRegistration>>> getGroupedByMemberRegistrations(@RequestParam("file") MultipartFile file, @RequestParam("groupBy") String groupBy, Model model) {
-        log.info("MRA  in FileUploadController-->uploadFile ------>" + file.getOriginalFilename());
+        if (log.isDebugEnabled()) {
+            log.debug("MRA  in FileUploadController-->uploadFile ------>" + file.getOriginalFilename());
+        }
 
         try {
             if (file.getOriginalFilename().endsWith(".xml")) {
