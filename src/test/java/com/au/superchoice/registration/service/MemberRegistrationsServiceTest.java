@@ -40,11 +40,10 @@ public class MemberRegistrationsServiceTest {
 
     }
 
-
     @Test
-    public void testGroupByFundWithoutFile() throws IOException {
+    public void testGroupByEmployerWithoutFile() throws IOException {
         assertEquals("This test is without the actual file ", 0,
-                this.processFileService.groupByFund(new MockMultipartFile("file",
+                this.processFileService.groupByEmployer(new MockMultipartFile("file",
                         new byte[]{65, 65})).size()
         );
 
@@ -59,13 +58,14 @@ public class MemberRegistrationsServiceTest {
 
 
     @Test
-    public void testGroupByEmployerWithoutFile() throws IOException {
+    public void testGroupByFundWithoutFile() throws IOException {
         assertEquals("This test is without the actual file ", 0,
-                this.processFileService.groupByEmployer(new MockMultipartFile("file",
+                this.processFileService.groupByFund(new MockMultipartFile("file",
                         new byte[]{65, 65})).size()
         );
 
     }
+
 
     @Test
     public void testXmlToCSV() throws IOException, SAXException, TransformerException, ParserConfigurationException {
